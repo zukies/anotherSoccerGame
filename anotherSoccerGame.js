@@ -60,10 +60,11 @@ for (const [i, { x: draw, team1, team2 }] of games) {
 }
 
 //3)
-// Odd of victory Bayern Munich: 1.33
-console.log(`The odds of ${game.team1} winning: ${game.odds.team1}`);
-console.log(`The odds of ${game.team2} winning: ${game.odds.team2}`);
-console.log(`The odds of a draw: ${game.odds.x}`);
+//latest update:
+for (const [team, odds] of ave) {
+  const wTeam = team === "x" ? `a draw` : `odd of victory ${game[team]} by`;
+  console.log(wTeam, odds);
+}
 
 //4)
 //BONUS CHALLENGE
