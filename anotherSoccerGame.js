@@ -1,9 +1,3 @@
-const odds = {
-  team1: 1.33,
-  x: 3.25,
-  team2: 6.5,
-};
-
 const game = {
   team1: "Bayern Munich",
   team2: "Borrussia Dortmund",
@@ -60,7 +54,6 @@ for (const [i, { x: draw, team1, team2 }] of games) {
 }
 
 //3)
-//latest update:
 for (const [team, odds] of ave) {
   const wTeam = team === "x" ? `a draw` : `odd of victory ${game[team]} by`;
   console.log(wTeam, odds);
